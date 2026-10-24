@@ -8,7 +8,7 @@ How to make the **"FaceTime me"** flow work when you message your Mac from iMess
 
 | Source | Contact used | Example |
 |--------|----------------|--------|
-| **iMessage (sender has phone number)** | Sender’s phone number | You text from +1 608 658 7850 → Mac calls that number |
+| **iMessage (sender has phone number)** | Sender’s phone number | You text from +1 555 555 0100 → Mac calls that number |
 | **iMessage (sender is iCloud email)** | Sender’s Apple ID (email) | You text from `you@icloud.com` → Mac calls that Apple ID |
 | **UI / no sender** | `.env` fallback | You click “video call” in the app → Mac uses `FACETIME_APPLE_ID` or `FACETIME_DEFAULT_NUMBER` |
 
@@ -29,7 +29,7 @@ Used when there’s **no** sender (e.g. UI) or as fallback:
 
 ```bash
 # Who to call when the request has no number (e.g. from UI)
-FACETIME_DEFAULT_NUMBER="+1 608 658 7850"
+FACETIME_DEFAULT_NUMBER="+15555550100"
 ```
 
 For **10-digit US numbers** we automatically prepend `1`. For other countries, set:
@@ -42,8 +42,8 @@ FACETIME_DEFAULT_COUNTRY_CODE=91
 ### Flow
 
 1. You send **“FaceTime me”** from iMessage (from your iPhone number).
-2. iMessage bridge sends that message to the backend with `phone_number` = your number (e.g. `+16086587850` or `iMessage;-;+16086587850`).
-3. Backend opens `facetime://16086587850` (digits only, no `+`).
+2. iMessage bridge sends that message to the backend with `phone_number` = your number (e.g. `+15555550100` or `iMessage;-;+15555550100`).
+3. Backend opens `facetime://15555550100` (digits only, no `+`).
 4. FaceTime opens; after a short delay we click the **Call / Video** button (vision first, then AppleScript).
 5. Your iPhone rings; answer to start the call.
 

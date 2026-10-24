@@ -71,7 +71,7 @@ TWILIO_AUTH_TOKEN=your-auth-token
 TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
 
 # YOUR phone number (with country code) - only your messages are processed
-ALLOWED_WHATSAPP_PHONE=+16692044836
+ALLOWED_WHATSAPP_PHONE=+15555550100
 ```
 
 Replace with your actual values.

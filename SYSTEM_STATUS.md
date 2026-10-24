@@ -43,13 +43,13 @@
 ### Browserbase
 ```bash
 STAGEHAND_USE_BROWSERBASE=true
-BROWSERBASE_API_KEY=bb_live_Ege52HyNvC7tR6xdYptdA71_QVw
-BROWSERBASE_PROJECT_ID=70656bf4-7817-4800-9b38-5c258b9e8790
+BROWSERBASE_API_KEY=your-browserbase-api-key
+BROWSERBASE_PROJECT_ID=your-browserbase-project-id
 ```
 
 ### Bright Data
 ```bash
-BRIGHT_DATA_API_KEY=f2244c0c-a41c-4468-b976-4a5847e65f37
+BRIGHT_DATA_API_KEY=your-bright-data-api-key
 BRIGHT_DATA_ZONE=web_unlocker2
 ```
 
@@ -88,7 +88,7 @@ Open http://localhost:5173
 ```bash
 curl -X POST http://127.0.0.1:8003/api/new_imessage \
   -H "Content-Type: application/json" \
-  -d '{"text": "your command", "phone_number": "+16504440949"}'
+  -d '{"text": "your command", "phone_number": "+15555550100"}'
 ```
 
 ## Performance

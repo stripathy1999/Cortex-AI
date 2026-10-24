@@ -42,7 +42,7 @@ STAGEHAND_SERVICE_URL = os.getenv("STAGEHAND_SERVICE_URL", "http://127.0.0.1:500
 
 # FaceTime: default country code when number has no country code (e.g. 9871172037 -> 919871172037)
 FACETIME_DEFAULT_COUNTRY_CODE = (os.getenv("FACETIME_DEFAULT_COUNTRY_CODE") or "").strip()
-# FaceTime: always call this number when user says "FaceTime me" (e.g. +1 6086587850)
+# FaceTime: always call this number when user says "FaceTime me" (e.g. +15555550100)
 FACETIME_DEFAULT_NUMBER = (os.getenv("FACETIME_DEFAULT_NUMBER") or "").strip()
 # FaceTime: your Apple ID for FaceTime on Mac (sign in on Mac with this; used as fallback if no number)
 FACETIME_APPLE_ID = (os.getenv("FACETIME_APPLE_ID") or "").strip()
