@@ -1,0 +1,15 @@
+# Environment and secrets - never commit
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Scraped content (Bright Data research)
+data/scraped/
+
+# OS
+.DS_Store
+Thumbs.db
